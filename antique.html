@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Data Exhange</title>
+
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="column left">
+
+            <ul style="list-style-type: none;">
+                <li>
+                    
+                    <label>DataCoin: <span id="dcValue"></span></label>
+                    
+                </li>
+                <br>
+                <li>
+
+                    <input 
+                        type="button" 
+                        onclick="switchUserStatus()" 
+                        id="BuySellButton" 
+                        value="Buy"
+                        style="min-width:50px;"
+                    >
+                    
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="column middle">
+
+            <div class="title-format">
+                
+                <h1>Data Exchange</h1>
+            
+            </div>
+
+            <div class="main-center" style='margin:auto;'>
+                <h4>
+                    Welcome to the Data Exchange
+                </h4>
+                <br>
+                <h5>
+                    This is a <em>BETA VERSION</em>
+                </h5>
+            </div>
+
+        </div>
+
+        <div class="column right">
+            <div class="pop-menu">
+                <input 
+                    type="image" 
+                    src="bin/MenuButton.png" 
+                    alt="Menu Button" 
+                    style='width:40px; height:40px; float:right;' 
+                    onclick="toggleMenu()"
+                >
+                <ul class="pop-menu-box" id="popMenuBox">
+                    <li>
+                        <input>
+                    </li>
+                    <li>
+                        <form>
+                            <input type="password" placeholder="Password">
+                        </form>
+                    </li>
+                    <li style="box-sizing: border-box;">
+                        <button style="width:50%">Log In</button>
+                        <button style="width:50%">Sign Up</button>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="info.html">What is this?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
