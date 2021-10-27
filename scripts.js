@@ -13,18 +13,18 @@ function getDataCoin() {
     return dataCoin;
 }
 
-function showBuy() {
+function showGive() {
     btn.style.left = "0";
     buy.style.left = "0";
     sell.style.left = "1000px";
 }
 
-function showSell() {
+function showTake() {
     btn.style.left = "87px";
     buy.style.left = "-1000px";
     sell.style.left = "0px";
 }
 
-function authenticate() {
+function connect() {
     
 }

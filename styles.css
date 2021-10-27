@@ -59,7 +59,7 @@
     position: relative;
     box-shadow: 0 0 20px 9px #ffffff1f;
     border-radius: 20px;
-    float:right;
+    height:20px;
 }
 
 .toggle-btn {
@@ -70,17 +70,6 @@
     outline: none;
     position: relative;
     font-size: 11px;
-}
-
-#btn {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 87px;
-    height: 100%;
-    background: linear-gradient(white, gray);
-    border-radius: 18px;
-    transition:.3s;
 }
 
 body {
@@ -97,8 +86,7 @@ header {
 
 .banner-links-box {
     float:right;
-    margin:10px;
-    height:100%;
+    margin:-17px 10px 0 0;
 }
 
 .banner-link {
@@ -106,6 +94,22 @@ header {
     display: inline-block;
     padding-right: 8px;
     padding-left: 8px;
+    height:75px;
+}
+
+.banner-links-container {
+    height:100%;
+}
+
+.banner-btn {
+    height:100%;
+    background:transparent;
+    border:none;
+    margin:-2px;
+}
+
+.banner-btn:hover {
+    cursor:pointer;
 }
 
 .column {
@@ -113,15 +117,15 @@ header {
 }
 
 .left {
-    width: 30%;
+    width: 40%;
 }
 
 .right {
-    width: 44%
+    width: 40%;
 }
 
 .middle {
-    width: 26%;
+    width: 20%;
 }
 
 .row:after {
@@ -130,7 +134,7 @@ header {
     clear:both;
 }
 
-.banner-link a {
+.banner-link button {
     text-decoration: none;
     color: inherit;
 }
@@ -140,10 +144,32 @@ header {
 }
 
 .logo-box {
-    margin: 24px 10px;
+    margin: 8px 0px;
     font-size: 20px;
+    height:50%;
+    width:100%;
 }
 
+.create-btn {
+    width: 174px;
+    height:100%;
+    position: relative;
+    border-radius: 20px;
+    border: 1px;
+    margin:auto;
+}
+
+.datacoin-box {
+    float:left;
+    margin:8px 24px;
+}
+
+.title-box {
+    display:block;
+    margin:0 auto;
+}
+
+/* contract page body */
 .content-box {
     width:1000px;
     height:600px;
@@ -192,10 +218,6 @@ header {
     width:50%;
 }
 
-#title-label {
-    float:left;
-}
-
 #tag-label {
     float:right;
 }
@@ -224,6 +246,13 @@ header {
     padding-top:60px;
 }
 
-.datacoin-box {
-    float:left;
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 87px;
+    height: 100%;
+    background: linear-gradient(white, gray);
+    border-radius: 18px;
+    transition:.3s;
 }
