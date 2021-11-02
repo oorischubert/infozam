@@ -14,17 +14,17 @@ function getDataCoin() {
 }
 
 function showGive() {
-    btn.style.left = "0";
-    buy.style.left = "0";
-    sell.style.left = "1000px";
-}
-
-function showTake() {
     btn.style.left = "87px";
     buy.style.left = "-1000px";
     sell.style.left = "0px";
 }
 
-function authenticate() {
+function showTake() {
+    btn.style.left = "0";
+    buy.style.left = "0";
+    sell.style.left = "1000px";
+}
+
+function connect() {
     
 }

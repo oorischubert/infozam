@@ -10,39 +10,80 @@
 
 <body>
 
-    <div class="pop-menu">
-        <input 
-            type="image" 
-            src="bin/MenuButton.png" 
-            alt="Menu Button" 
-            style='width:40px; height:40px; float:right;' 
-            onclick="toggleMenu()"
-        >
-        <ul class="pop-menu-box" id="popMenuBox">
-            <li>
-                <form>
-                    <input type="text" placeholder="Username">
-                </form>
-            </li>
-            <li>
-                <form>
-                    <input type="text" placeholder="Password">
-                </form>
-            </li>
-            <li>
-                <button>Log In</button>
-            </li>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <label>Contact Us</label>
-            </li>
-            <li>
-                <a href="info.html">What is this?</a>
-            </li>
-        </ul>
-    </div>
+    <header>
+
+        <div class="banner">
+            
+            <div class="column left">
+                <div class="datacoin-box">
+                    <p>Data Coins: <span id="data-coins-display"></span></p>
+                </div>
+            </div>
+
+            <div class="column middle">
+                <div class="logo-box">
+                    <div class="title-box">
+                        <label id="title-label">Infozam</label>
+                    </div>
+                </div>
+
+                <div class="mode-btn-box">
+                    <button type="button" class="create-btn" onclick="window.location.href='create-contract.html';">CREATE</button>
+                </div>
+            </div>
+
+            <div class="column right">
+                <div class="banner-links-box">
+
+                    <ul class="banner-links-container">
+                        <li class="banner-link">
+                            <button 
+                                type="button" 
+                                class="banner-btn" 
+                                onclick="window.location.href='index.html';">
+                                HOME
+                            </button>
+                        </li>
+                        <li class="banner-link">
+                            <button 
+                                type="button" 
+                                class="banner-btn" 
+                                onclick="window.location.href='info.html';">
+                                ABOUT US
+                            </button>
+                        </li>
+                        <li class="banner-link">
+                            <button 
+                                type="button" 
+                                class="banner-btn" 
+                                onclick="window.location.href='contact.html';">
+                                CONTACT
+                            </button>
+                        </li>
+                        <li class="banner-link">
+                            <button 
+                                type="button" 
+                                class="banner-btn" 
+                                onclick="window.location.href='login/front_end.html';">
+                                REGISTER
+                            </button>
+                        </li>
+                        <li class="banner-link">
+                            <button 
+                                type="button" 
+                                class="banner-btn" 
+                                onclick="window.location.href='index.html';">
+                                PROFILE
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
 
     <div class="contact-field">
         <b>

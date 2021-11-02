@@ -1,41 +1,70 @@
-.main-center{
-    margin: auto;
-    text-align: center;
-    width:90%;
-    border: 3px solid #1D57BD;
-}
-
-.title-format {
-    text-align:center;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding-top:75px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+    width:60%;
     margin:auto;
-}
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
 
-.pop-menu {
-    position:relative;
-    float:right;
-    margin-right:30px; 
-    margin-top:10px;
-}
-
-.pop-menu-box {
-    display: none;
-    list-style-type: none;
-}
-
-.pop-content {
-    display:none;
-    position:absolute;
-    background-color: antiquewhite;
-    min-width:100px;
-    min-height:100%;
-    z-index:1;
-}
-
-.contact-field {
-    font-size: 24px;
-}
-
-.banner {
+  .banner {
     position: fixed;
     height: 75px;
     width:100%;
@@ -71,11 +100,6 @@
     outline: none;
     position: relative;
     font-size: 11px;
-}
-
-body {
-    margin:0;
-    padding-top:75px;
 }
 
 header {
@@ -169,92 +193,4 @@ header {
     display:block;
     width:98%;
     text-align:center;
-}
-
-/* contract page body */
-.content-box {
-    width:1000px;
-    height:600px;
-    margin:4.5% auto;
-    position:relative;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.user-box {
-    position:absolute;
-    transition:.3s;
-}
-
-#buy {
-    width:1000px;
-    left:0;
-}
-
-#sell {
-    width:1000px;
-    left:1000px;
-    top:50px;
-}
-
-#buy-img {
-    width:100%;
-}
-
-#sell-img {
-    width:100%;
-}
-
-.top-input {
-    background: transparent;
-    border-bottom: 1px solid #999;
-    border-top:0;
-    border-right:0;
-    border-left:0;
-    outline:none;
-    width: 49%;
-    margin: 0;
-}
-
-.sell-label {
-    width:50%;
-}
-
-#tag-label {
-    float:right;
-}
-
-#title-input {
-    float:left;
-}
-
-#tag-input {
-    float:right;
-}
-
-#desc-label {
-    width:100%;
-}
-
-#desc-input {
-    width:99.2%;
-    min-height:200px;
-    background:transparent;
-    outline:none;
-    resize:none;
-}
-
-.desc-box {
-    padding-top:60px;
-}
-
-#btn {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 87px;
-    height: 100%;
-    background: white;
-    border-radius: 18px;
-    transition:.3s;
 }
